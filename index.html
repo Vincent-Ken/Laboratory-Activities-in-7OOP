@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vincent Ken Pineda | Star Wars Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero-header">
+    <h1>Vincent Ken Pineda</h1>
+    <p>“A creator guided by the Force — crafting technology, passion, and art.”</p>
+  </header>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo"> Jedi Portfolio </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#history">Origin</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <button class="btn-toggle" onclick="toggleTheme()">Toggle Light/Dark Side</button>
+
+  <main class="container">
+
+    <section id="history" class="card">
+      <h2>My Origin Story</h2>
+      <p>Vincent Ken Anicete Pineda, born in Angeles City, Pampanga — now 20 years old and living in Angeles City.</p>
+      <p>A hardworking Padawan, always striving toward his dreams and guided by discipline.</p>
+      <img src="picturevincent.png" alt="Vincent" class="profile-img"/>
+    </section>
+
+    <section id="hobbies" class="card">
+      <h2>Hobbies Across the Galaxy</h2>
+
+      <h3>🚀 Driving</h3>
+      <p>Whether a car or a speeder, the thrill of motion calls me to adventure.</p>
+      <img src="Motorcycling.jpg" alt="Motorcycling" class="hobby-img"/>
+
+      <h3>🎮 Gaming</h3>
+      <p>Exploring virtual worlds — catching Pokémon, battling in MLBB, or conquering galaxies.</p>
+
+      <h3>🎥 Pop Culture</h3>
+      <p>I enjoy Disney Pixar, Marvel, Star Wars, and anime — worlds filled with stories of heroes.</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Training & Achievements</h2>
+      <ul>
+        <li>Graduated Elementary — Sto Rosario ES (2016)</li>
+        <li>Graduated High School — Sto Domingo IS (2020)</li>
+        <li>Graduated Senior High — Sto Domingo IS (2023)</li>
+        <li>Currently a Sophomore at City College of Angeles</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card project-section">
+      <h2>Holocron Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Built with HTML, CSS, and JS — showcasing my path through the galaxy of learning.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Lab Task 1</h3>
+          <a href="Lab 1 Ken.pdf" target="_blank">
+            <img src="escapesequence.png" alt="Lab 1 Screenshot">
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Lab Task 2</h3>
+          <a href="Pinedalab2 ken.pdf" target="_blank">
+            <img src="python-function-1-1024x597.png" alt="Lab 2 Screenshot">
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Lab Task 3</h3>
+          <a href="PinedaVincent.pdf" target="_blank">
+            <img src="python-lists.png" alt="Lab 3 Screenshot">
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Lab Task 4</h3>
+          <a href="ken4.pdf" target="_blank">
+            <img src="dictionary-in-python.png" alt="Lab 4 Screenshot">
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Lab Task 5</h3>
+          <a href="PinedaVincent5.pdf" target="_blank">
+            <img src="Classes-and-objects-in-python-1.jpg.png" alt="Lab 5 Screenshot">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+  <footer>
+    <p>© 2025 Moses Bondoc | May the Force Be With You</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+    }
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    window.onscroll = function() {
+      const btn = document.getElementById("scrollTopBtn");
+      if (document.documentElement.scrollTop > 200) btn.style.display = "block";
+      else btn.style.display = "none";
+    };
+  </script>
+
+</body>
+</html>

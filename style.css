@@ -1,0 +1,226 @@
+/* Star Wars Neon Style by ChatGPT (GPT-5) */
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at center, #000 60%, #050a1a 100%);
+  color: #00eaff;
+  transition: 0.6s;
+}
+
+body.light {
+  background: #eaf7ff;
+  color: #001b33;
+}
+
+/* Header */
+.hero-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to bottom, #02040a, #000);
+  border-bottom: 2px solid #00eaff;
+}
+.hero-header h1 {
+  font-size: 2.8rem;
+  text-shadow: 0 0 15px #00eaff, 0 0 30px #0077ff;
+}
+.hero-header p {
+  color: #ffe81f;
+  text-shadow: 0 0 10px #ffe81f;
+  font-size: 1.1rem;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #00eaff55;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+.logo {
+  font-weight: 700;
+  color: #00eaff;
+  letter-spacing: 2px;
+}
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: #00eaff;
+  font-size: 1.6rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #00eaff;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #ffe81f;
+  text-shadow: 0 0 12px #ffe81f;
+}
+
+/* Theme Toggle */
+.btn-toggle {
+  margin: 1.2rem auto;
+  display: block;
+  padding: 8px 18px;
+  border: 1px solid #00eaff;
+  background: transparent;
+  color: #00eaff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-toggle:hover {
+  background: #00eaff;
+  color: #000;
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Cards */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00eaff33;
+  border-radius: 10px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px #00eaff22;
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 0 30px #00eaff55;
+}
+.card h2 {
+  color: #ffe81f;
+  text-shadow: 0 0 12px #ffe81f;
+  margin-bottom: 1rem;
+}
+.card h3 {
+  color: #00eaff;
+  margin-top: 1.5rem;
+}
+.card p {
+  line-height: 1.6;
+}
+
+/* Images */
+.profile-img {
+  max-width: 220px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 0 20px #00eaff77;
+}
+.hobby-img {
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 15px #00eaff55;
+}
+
+/* Skills List */
+ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 0.3rem 0;
+}
+ul li::before {
+  content: "✦ ";
+  color: #ffe81f;
+}
+
+/* Projects Grid */
+.project-section .project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.project-card {
+  border: 1px solid #00eaff33;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px #00eaff55;
+}
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+/* Scroll to Top */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  background: #00eaff;
+  color: #000;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00eaff88;
+  transition: 0.3s;
+}
+#scrollTopBtn:hover {
+  transform: scale(1.1);
+  background: #ffe81f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  border-top: 1px solid #00eaff22;
+  color: #999;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 55px;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+}
